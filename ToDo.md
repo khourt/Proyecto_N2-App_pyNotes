@@ -1,5 +1,6 @@
 ## Lista de cambios futuros:
 1. Edición de preferencias, para que el usuario tenga una experiancia personalizada.
+  - Incluir archivo de configuración externa
   - Cambio de tipo de letras
   - Cambio de color de la letra
   - Integración de themes
@@ -13,3 +14,4 @@
 8. Opción de checkbox para listas.
 9. Integración de una imagen SVG de fondo en un tono gris [Posible necesidad de cambiar de libreria]
 10. *Inserción de imagenes (imagenes enlazadas). [Posible necesidad de cambiar de libreria]
+11. Edición con lenguajes de marcado (MarkDown, HTML, BBCode, TeX)
