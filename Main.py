@@ -7,11 +7,11 @@ from tkinter.filedialog import askopenfile, asksaveasfile
 def nuevo_archivo():
 	area_trabajo.delete(1.0,END)
 def abrir_archivo():
-	documento = askopenfile(filetypes=[("Archivos de texto","*.txt")]) # Typo faltante ,"*.cody"
+	documento = askopenfile(filetypes=[("Archivos de texto","*.cody")]) # Tipo: "*.text"
 	if documento != None:
 		area_trabajo.insert(1.0, documento.read())
 def guardar_archivo():
-	documento = asksaveasfile(filetypes=[("Archivos de texto","*.txt")])
+	documento = asksaveasfile(filetypes=[("Archivos de texto","*.cody")]) # Tipo: "*.text"
 	print(documento.write(area_trabajo.get(1.0, END)))
 # Edición
 def accion_deshacer():
@@ -30,8 +30,9 @@ def accion_pegar():
 # Acerca de 
 def acerca_de():
 	messagebox.showinfo("Acerca de PyNotes", "PyNotes es un programa desarrollado en Python,"
-						"como practica para el desarrollo de programas con interfaz grafica "
-						"basado en el codigo de Codigazo")
+						"como practica para el desarrollo de programas con interfaz grafica. "
+						"Basado en el codigo de Codigazo."
+						"Aplicación en desarrollo.")
 
 
 # Ventana Principal
@@ -67,7 +68,8 @@ if __name__ =="__main__":
 	menubar.add_cascade(label="Ayuda", menu=ayuda)
 
 	# Area de trabajo
-	area_trabajo = Text(ventana, undo="true")
+	#					    Color de fondo	Color de letra	       Fuente					  Paddin	
+	area_trabajo = Text(ventana, bg="white", fg="black", font=("Roboto", 12, "bold"), padx="10", pady="10", yscrollcommand="true", undo="true")
 	area_trabajo.pack(side=TOP, fill=BOTH, expand=1)
 
 
