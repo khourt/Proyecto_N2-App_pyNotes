@@ -69,7 +69,7 @@ if __name__ =="__main__":
 
 	# Area de trabajo
 	#					    Color de fondo	Color de letra	       Fuente					  Paddin	
-	area_trabajo = Text(ventana, bg="white", fg="black", font=("Roboto", 12, "bold"), padx="10", pady="10", yscrollcommand="true", undo="true")
+	area_trabajo = Text(ventana, bg="white", fg="black", font=("Roboto", 12, "bold"), padx="10", pady="10", undo="true")
 	area_trabajo.pack(side=TOP, fill=BOTH, expand=1)
 
 
